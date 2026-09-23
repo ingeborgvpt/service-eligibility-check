@@ -1,3 +1,4 @@
+"use strict";
 // Husk fra dag 1: skriv "use strict" herunder
 
 
@@ -14,7 +15,13 @@ function tjekGratisService(brand, year) {
     // Ellers:
     //   - sæt harGratisService til false
     //   - log `${brand} fra ${year} får ikke gratis service.`
-
+if ((brand === `Volkswagen` || brand === `Skoda`) && (year > 2023)) {
+        harGratisService = true;
+        console.log(`${brand} fra ${year} får gratis service i 1 år.`);
+    } else {
+        harGratisService = false;
+        console.log(`${brand} fra ${year} får ikke gratis service.`);
+    }
 }
 
 tjekGratisService(`Volkswagen`, 2024);
