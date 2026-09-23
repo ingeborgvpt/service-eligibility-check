@@ -31,4 +31,6 @@ tjekGratisService(`Tesla`, 2025);
 // Prøv selv (efter du har løst opgaven): ret "let harGratisService" til "const harGratisService"
 // ovenfor, og kør koden igen. Se hvilken fejl du får i konsollen, og hvorfor - genkender du
 // situationen fra klasseøvelsen? Ret den tilbage til "let", når du har set fejlen.
+
+/* Constant må ikke variere, derfor er det nødt til at være let, fordi vi kan komme til at variere mellem true og false (?) */
  
